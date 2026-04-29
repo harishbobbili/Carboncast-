@@ -1,0 +1,35 @@
+# Node (anywhere in project)
+node_modules/
+
+# Frontend build
+frontend/build/
+frontend/dist/
+
+# Backend build (if any later)
+backend/dist/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+#ML
+ML/
+
+#Models
+Models/
+
+Data/
+
+.env/

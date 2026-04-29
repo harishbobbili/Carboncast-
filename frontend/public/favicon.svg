@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background circle with gradient -->
+  <defs>
+    <radialGradient id="earthGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Glowing background -->
+  <circle cx="50" cy="50" r="45" fill="url(#earthGradient)" filter="url(#glow)"/>
+  
+  <!-- Earth continents simplified -->
+  <path d="M30,40 Q35,35 40,40 L45,35 Q50,30 55,35 L60,40 Q65,35 70,40" 
+        fill="none" stroke="#064e3b" stroke-width="3" opacity="0.6"/>
+  <path d="M25,55 Q30,50 35,55 L40,50 Q45,55 50,50 L55,55" 
+        fill="none" stroke="#064e3b" stroke-width="3" opacity="0.6"/>
+  
+  <!-- Leaf accent -->
+  <path d="M65,25 Q70,20 75,25 Q70,30 65,25" 
+        fill="#34d399" opacity="0.8"/>
+  
+  <!-- Center highlight -->
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#6ee7b7" stroke-width="1" opacity="0.3"/>
+</svg>
